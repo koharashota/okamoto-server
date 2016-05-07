@@ -5,6 +5,10 @@ class Api::Pepper::DirectionsController < Api::Pepper::PepperController
   def index
   end
 
+  def clear
+    Direction.all.update_all(complete_f: true)
+  end
+
   private
 
   def direction
