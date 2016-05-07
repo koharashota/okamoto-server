@@ -3,7 +3,8 @@ json.direction do
     json.category direction.category
     json.value direction.value
   else
-    json.category 0
-    json.value 0 
+    json.category 2
+    json.value 1
+    json.parts 2
   end
 end
