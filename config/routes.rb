@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       end
     end
     namespace :pepper do
-      resources :trainings, only: [:index] do
+      resources :directions, only: [:index] do
       end
     end
   end
