@@ -8,7 +8,9 @@ class Api::Kinect::SegmentsController < Api::ApiController
 
   def segment_params
     # coordinates [ [x0, y0], [x1, y1] ]
-    params.require(:segment).permit( frames: [ :coordinates ] )
+    #params.require(:segment).permit( frames_attributes: [ :coordinates ] )
+    #params.require(:segment).permit( frames_attributes: [ coordinates: [] ] )
+    params.require(:segment)
   end
 
   def new_segment
