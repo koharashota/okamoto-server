@@ -106,3 +106,6 @@ Temporary Items
 
 # IDE
 .project
+
+# db
+mongodb/*
