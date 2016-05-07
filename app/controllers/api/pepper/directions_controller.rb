@@ -13,7 +13,9 @@ class Api::Pepper::DirectionsController < Api::Pepper::PepperController
   helper_method :direction
 
   def complete_direction
-    direction.complete_f = true
-    direction.save!
+    if direction
+      direction.complete_f = true
+      direction.save!
+    end
   end
 end
