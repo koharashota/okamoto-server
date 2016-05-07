@@ -32,7 +32,7 @@ class Result
         'Pick up the pace'
       end
     else
-      ''
+      'Awsome'
     end
   end
 
