@@ -11,7 +11,7 @@ class Api::Pepper::ResultsController < Api::Pepper::PepperController
   private
 
   def result
-    @result ||= Result.where(complete_f: false).asc(:created_at).first
+    @result ||= Result.where(complete_f: false).desc(:created_at).first
   end
   helper_method :result
 
