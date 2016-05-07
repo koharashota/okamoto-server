@@ -19,11 +19,8 @@ class Result
         # '腰が高いです'
         'Drop the waist'
       when 4
-        # '膝が高いです'
-        'Bend the knee more'
-      when 5
-        # '膝が低いです'
-        'Raise the knee'
+        # '膝が出過ぎです'
+        'Pull the knee'
       end
     when 'pace'
       case value
@@ -67,8 +64,6 @@ class Result
         2
       when 4
         2
-      when 5
-        1
       end
     when 'pace'
       case value
