@@ -1,6 +1,6 @@
 class Api::Kinect::SegmentsController < Api::ApiController
   def create
-    new_segment.item = 'squat'
+    new_segment.item = 'pushup'
     if new_segment.save
     end
   end
