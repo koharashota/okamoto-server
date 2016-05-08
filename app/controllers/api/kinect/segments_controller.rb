@@ -1,5 +1,6 @@
 class Api::Kinect::SegmentsController < Api::ApiController
   def create
+    new_segment.type = 'squat'
     if new_segment.save
     end
   end
