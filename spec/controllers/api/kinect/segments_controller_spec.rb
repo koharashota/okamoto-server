@@ -21,7 +21,7 @@ RSpec.describe Api::Kinect::SegmentsController, type: :controller do
       expect(segment_frames_coordinates_size).to eq(25)
     end
     it 'typeが設定されている' do
-      expect(segment.type).to eq('squat')
+      expect(segment.item).to eq('squat')
     end
   end
 end

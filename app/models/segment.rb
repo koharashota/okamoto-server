@@ -3,5 +3,5 @@ class Segment
   include Mongoid::Timestamps
   embeds_many :frames
   accepts_nested_attributes_for :frames
-  field :type, type: String
+  field :item, type: String
 end
